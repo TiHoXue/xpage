@@ -1,0 +1,32 @@
+body {
+    font-family: Menlo, Monaco, monospace;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+#app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.content {
+    font-size: 24px;
+    text-align: center;
+    color: white;
+}
+.time-display {
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+.time {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+.date {
+    font-size: 18px;
+}
+
