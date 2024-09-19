@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} - xueth's Articles</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel='stylesheet' href='https://chinese-fonts-cdn.deno.dev/packages/lxgwwenkai/dist/LXGWWenKai-Regular/result.css'>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+<body>
+    <div id="app">
+        <div class="content">
+            {{ content|safe }}
+        </div>
+        <div class="home-link">
+            <a href="{{ url_for('main.articles') }}">Back to Articles</a>
+        </div>
+        <div class="home-link">
+            <a href="{{ url_for('main.homepage') }}">Back to Home</a>
+        </div>
+    </div>
+</body>
+</html>
