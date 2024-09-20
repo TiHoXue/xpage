@@ -3,10 +3,14 @@ body {
     margin: 0;
     padding: 0;
     background-color: black;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 #app {
     display: flex;
     flex-direction: column;
+    flex: 1;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -96,5 +100,37 @@ body {
 
 .article-page .home-link {
     margin-top: 0;
+}
+
+/* Update article-page specific styles */
+.article-page #app {
+    justify-content: space-between;
+    padding: 20px;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.article-page .external-links {
+    margin-top: 40px;
+}
+
+/* Styles for external links */
+.external-links {
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    background-color: black;
+}
+
+.external-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.external-links a:hover {
+    text-decoration: underline;
 }
 
