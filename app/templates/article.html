@@ -8,16 +8,18 @@
     <link rel='stylesheet' href='https://chinese-fonts-cdn.deno.dev/packages/lxgwwenkai/dist/LXGWWenKai-Regular/result.css'>
     <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
 </head>
-<body>
+<body class="article-page">
     <div id="app">
         <div class="content">
             {{ content|safe }}
         </div>
-        <div class="home-link">
-            <a href="{{ url_for('main.articles') }}">Back to Articles</a>
-        </div>
-        <div class="home-link">
-            <a href="{{ url_for('main.homepage') }}">Back to Home</a>
+        <div class="links-container">
+            <div class="home-link">
+                <a href="{{ url_for('main.articles') }}">回到文章列表</a>
+            </div>
+            <div class="home-link">
+                <a href="{{ url_for('main.homepage') }}">回到主页</a>
+            </div>
         </div>
     </div>
 </body>
